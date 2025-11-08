@@ -1,6 +1,8 @@
 # dependencies
 /node_modules
 /.pnp
+/.pnpm
+/.pnpm-store
 .pnp.js
 
 node_modules
