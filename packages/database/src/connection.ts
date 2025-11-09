@@ -13,11 +13,11 @@ export const connectToDatabase = async (): Promise<void> => {
   }
 
   try {
-    const connection = await mongoose.connect(MONGO_DB_URI)
+    await mongoose.connect(MONGO_DB_URI)
     logger.success(`Connected to MongoDB: ${MONGO_DB_URI}`)
     isConnected = true
-  } catch (error) {
-    logger.error('Failed to connect to MongoDB:', error)
+  } catch (error: any) {
+    logger.error('Failed to connect to MongoDB:', error.message)
     throw error
   }
 }
