@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
+    "consola": "^3.4.2",
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
@@ -20,6 +21,8 @@
   },
   "exports": {
     ".": "./src",
-    "./styles": "./src/styles.ts"
+    "./styles": "./src/styles.ts",
+    "./config": "./src/config.ts",
+    "./logger": "./src/logger.ts"
   }
 }

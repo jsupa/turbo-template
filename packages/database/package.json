@@ -1,0 +1,22 @@
+{
+  "name": "@monorepo/database",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./models/*": "./src/models/*.ts"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "dependencies": {
+    "mongoose": "^8.8.4",
+    "@monorepo/utils": "workspace:*"
+  },
+  "devDependencies": {
+    "@monorepo/eslint-config": "workspace:*",
+    "@monorepo/tsconfig": "workspace:*"
+  }
+}
