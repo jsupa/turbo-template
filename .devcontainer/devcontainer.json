@@ -19,7 +19,8 @@
 				"donjayamanne.typescript-notebook",
 				"meganrogge.template-string-converter",
 				"redhat.vscode-yaml",
-				"searKing.preview-vscode"
+				"searKing.preview-vscode",
+				"esbenp.prettier-vscode"
 			]
 		}
 	}
